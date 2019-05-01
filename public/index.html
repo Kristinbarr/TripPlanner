@@ -9,6 +9,49 @@
   <script src="./bundle.js" defer></script>
 </head>
 <body>
-  <div id='map'></div>
+  <header>
+    <h1>Wonderful Trip Planner</h1>
+  </header>
+  <div id='app'>
+    <div id='map'></div>
+    <aside>
+      <div class='panel' id='options-panel'></div>
+        <div>
+          <h2>Hotels</h2>
+          <select id="hotels-choices">
+            <option>A Hotel</option>
+          </select>
+          <button id='hotels-add' class='options-btn'>+</button>
+        </div>
+        <div>
+          <h2>Hotels</h2>
+          <select id="restaurants-choices">
+            <option>A Restaurant</option>
+          </select>
+          <button id='restaurants-add' class='options-btn'>+</button>
+        </div>
+        <div>
+          <h2>Hotels</h2>
+          <select id="activities-choices">
+            <option>A Hotel</option>
+          </select>
+          <button id='activities-add' class='options-btn'>+</button>
+        </div>
+        <div class='panel' id='itinerary'>
+          <div>
+            <h2>My Hotel</h2>
+            <ul class='list-group' id='hotels-list'></ul>
+          </div>
+          <div>
+            <h2>My Restaurants</h2>
+            <ul class='list-group' id='restaurants-list'></ul>
+          </div>
+          <div>
+              <h2>My Activities</h2>
+              <ul class='list-group' id='activities-list'></ul>
+            </div>
+        </div>
+    </aside>
+  </div>
 </body>
 </html>
